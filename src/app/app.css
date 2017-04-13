@@ -1,0 +1,53 @@
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+ul.list {
+    list-style: none;
+    padding-left: 0px;
+    line-height: 22px;
+}
+
+ul.list li {
+    font-size: 16px;
+    line-height: 42px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    margin-top: 12px;
+}
+
+ul.list li span {
+    width: 6px;
+    height: 42px;
+    background: #50aeff;
+    margin-right: 5px;
+    float: left;
+}
+
+ul[data-gender='Female'] li span {
+    background: #fd4782;
+}
+
+h4 a {
+    display: inline-block;
+}
+
+h4 a[data-gender="Male"] {
+    width: 25px;
+    height: 18px;
+    background: url(./must.png) no-repeat;
+    background-size: 98%;
+}
+
+h4 a[data-gender="Female"] {
+    width: 25px;
+    height: 18px;
+    background: url(./cap.png) no-repeat;
+    background-size: 98%;
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
